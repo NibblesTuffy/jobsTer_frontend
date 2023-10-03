@@ -4,7 +4,8 @@ import { clearUser } from '../features/user/userSlice'
 axios.defaults.withCredentials = true
 const customFetch = axios.create({
   // baseURL: 'https://jobify-prod.herokuapp.com/api/v1/toolkit',
-  baseURL: 'http://localhost:5100/api/v1/toolkit',
+  // baseURL: 'http://127.0.0.1:5100/api/v1/toolkit',
+  baseURL: 'https://jobster-backend.onrender.com/api/v1/toolkit',
 })
 
 const logoutMessage = 'Unauthorized! Logging out...'
